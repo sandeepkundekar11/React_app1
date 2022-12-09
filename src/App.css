@@ -1,38 +1,295 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav_list>ul>li {
+    list-style: none;
+    margin-left: 2.1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+ul >li >.nav12
+{
+    list-style: none;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(225, 243, 250);
+    position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav_list>ul {
+    margin-right: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav_list {
+    width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
+.logo {
+    width: 10%;
+}
+
+.btn1 {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+
+
+@media (max-width:704px) {
+
+    .nav1 {
+        visibility: hidden;
+    }
+
+    .nav_list {
+        position: absolute;
+        top: 3.5rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(225, 243, 250);
+    }
+
+    #dis1 {
+        visibility: visible;
+    }
+
+    #dis2 {
+        visibility: hidden;
+    }
+
+    .nav_list>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_list>ul>li {
+        margin-top: 1.3rem;
+    }
+
+    .logo {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .menu {
+        width: 10%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav_list>ul>li {
+        text-align: center;
+    }
+
+    .menu {
+        width: 4rem;
+        height: 3rem;
+        display: block;
+    }
+
+    .btn1 {
+        width: 100vw;
+    }
+
+}
+
+/* Styling home page */
+
+/*  background-color: rgb(225, 243, 250); */
+.Home {
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(225, 243, 250);
+}
+
+.sub_home {
+    width: 85vw;
+    height: 90vh;
+    /* background-color: bisque; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.sub_home1 {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.sub_home2 {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.home_img {
+    width: 35vw;
+    height: 60vh;
+}
+
+@media (max-width:816px) {
+    .sub_home {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (max-width:745px) {
+    .sub_home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub_home1 {
+        width: 100vw;
+    }
+
+    .sub_home2 {
+        width: 100vw;
+        margin-top: 4rem;
+    }
+
+    .home_img {
+        width: 250px;
+        height: 60vh;
+    }
+    .Home
+    {
+        padding-top: 7rem;
+        height: 100%;
+    }
+    .sub_home1 >div
+    {
+      font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width:300px) {
+    .btns
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .btns >button 
+    {
+        margin-top:1rem;
+        margin: auto;
+    }
+}
+
+
+/* Styling Service page */
+.Service {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+    background-color: rgb(255, 91, 31);
+}
+@media (max-width:991px) {
+    .Service {
+        width: 100vw;
+        height: 100%;
+        padding-top: 5rem;
+        background-color: rgb(255, 91, 31);
+    }  
+}
+
+
+/* styling the About page */
+.About
+{
+    width:100vw;
+    height: 100%;
+    padding-top: 4rem;
+    background-color: rgb(225, 243, 250);
+}
+
+/* styling FAQ page */
+ .FAQ
+ {
+    width: 100vw;
+    padding-top: 6rem;
+    height: 100vh;
+    background-color:rgb(225, 243, 250); ;
+ }
+.clients
+{
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+@media (max-width:768px) {
+    .FAQ{
+        height: 100%;
+    }
+}
+
+
+
+.contact-p1
+{
+    background-color: purple;
+}
+.form-1
+{
+    margin: auto;
+    box-shadow: -1px 6px 10px -1px;
+    padding: 2rem;
+}
+.form-1 >div >label
+{
+    font-weight: bolder;
+}
+.form-1 >div >input
+{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+.form-1 >div
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form
+{
+   
+    max-width: 40vw;
+    min-width: 260px;
+    margin-top: -9%;
+    margin-bottom: 2rem;
+    height: 100%;
+    background-color: white;
 }
